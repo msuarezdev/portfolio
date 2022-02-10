@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color:#02061c;
+  color: #f2f2f2;
+}
+/*INICIO HEADER*/
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+.navbar__logo{
+  margin-top: -7px;
+}
+.navbar__logo a{
+  color: #f2f2f2;
+  text-decoration: none;
+}
+.navbar__logo span{
+color:#EB6E38;
+}
+.navbar__menu{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.navbar__menu li{
+  list-style: none;
+}
+.navbar__menu a{
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.navbar .menu--activo{
+  color:#EB6E38;
+}
+.navbar__menu a:hover{
+  background-color: #EB6E38;
+  color: #02061c;
+  transition: ease 0.4s;
+}
+/*FIN HEADER*/
+
+/*INICIA MAIN*/
+.main{
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+.main h1 {
+  font-size:3em;
+}
+.main span{
+  color: #EB6E38;
+}
+button{
+  padding: 10px 20px;
+  background-color: #EB6E38;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(235, 110, 56, .69);
+}
+button:hover{
+  background-color: #f2f2f2;
+  box-shadow: none;
+}
+
+.main--img{
+  width: 380px;
+  border: 7px solid #EB6E38;
+  height: 520px;
+}
+/*FINALIZA MAIN*/
+
+/*INICIA SOBRE MI*/
+.sobreMi{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.sobreMi img{
+  width: 100%;
+  grid-column: 1/5;
+}
+
+.sobreMi p{
+  margin-bottom: 1em;
+}
+
+.sobreMi__info {
+  grid-column: 5/10;
+  padding: 3em;
+}
+
+.sobreMi__info h2{
+  font-size: 2em;
+  color: #02061c;
+}
+
+.sobreMi--divisor{
+  height: 4px;
+  width: 60px;
+  background-color: #EB6E38;
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
+
+
+/* AZULES
+#02061c*
+#191C32
+
+NARANJA 
+#EB6E38
+
+Dorado
+#D4B128
+/ 
