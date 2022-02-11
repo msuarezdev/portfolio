@@ -4,58 +4,197 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
+  <title>Matías Suarez | Portafolio</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
 </head>
 <body>
-<!--INICIO HEADER-->
-<div class="container" alt="wrapper">
-  <header>
-    <nav class="navbar">
-      <div class="navbar__logo" alt="brand">
-        <h2>
-          <a href="#">
-            M<span>S</span>
-          </a>  
-        </h2>
-      </div>
-      <ul class="navbar__menu">
-        <li><a class="menu--activo" href="#">Home</a></li>
-        <li><a class="" href="#">About me</a></li>
-        <li><a class="" href="#">Portfolio</a></li>
-        <li><a class="" href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!--FIN HEADER-->  
+  <!--INICIO HEADER-->
+  <div class="container" alt="wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo" alt="brand">
+          <h2>
+            <a href="#Inicio">
+              M<span>S</span>
+            </a>  
+          </h2>
+        </div>
+        <ul class="navbar__menu">
+          <li><a class="menu--activo" href="#Inicio">Inicio</a></li>
+          <li><a class="" href="#Sobre_mi">Sobre mi</a></li>
+          <li><a class="" href="#Portafolio">Portafolio</a></li>
+          <li><a class="" href="#Contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--FIN HEADER-->  
 
-  <!--INICIA MAIN-->
-  <main class="main">
-    <div class="main__info">
-      <h1>¡Hola! soy Matias<span>Suarez</span></h1>
-      <p>Este sitio tiene como finalidad dar información importante sobre mi carrera profesional.  Mis proyectos, formaciones, experiencias laborales y expectativas a futuro. Te invito a navegar por todas las secciones y ponerte en contacto conmigo ante cualquier consulta.</p>
-      <a dowload href="img/Suarez Matias.pdf">
-        <button class="button">Descargá mi CV</button>
-      </a>
-    </div>
-    <img src="img/Me_612px.png" class="main--img"alt="Matias Suarez imagen">
-  </main>
-</div>
-  <!--FINALIZA MAIN-->
+    <!--INICIA MAIN-->
+    <main class="main" id="Inicio">
+      <div class="main__info">
+        <h1>¡Hola! soy Matias<span>Suarez</span></h1>
+        <p>Este sitio tiene como finalidad dar información importante sobre mi carrera profesional.  Mis proyectos, formaciones, experiencias laborales y expectativas a futuro. Te invito a navegar por todas las secciones y ponerte en contacto conmigo ante cualquier consulta.</p>
+        <a dowload href="img/Suarez Matias.pdf">
+          <button class="button">Descargá mi CV</button>
+        </a>
+      </div>
+      <img src="img/Me_612px.png" class="main--img"alt="Matias Suarez imagen">
+    </main>
+  </div>
+    <!--FINALIZA MAIN-->
 
   <!--INICIA SOBRE MI-->
-<div class="sobreMi">
-  <img src="./img/About_me.png" alt="Matias Suarez retrato">
-  <div class="sobreMi__info">
-    <h2> Sobre mi</h2>
-    <div class="sobreMi--divisor"></div>
-    <p>Me dedico al desarrollo de software, actualmente me encuentro en Argentina, mas precisamente en la ciudad de Tierra del Fuego, trabajando como back-end developer para una empresa crediticia
-      local.</p>
-    <p>Me considero una persona persistente y proactiva lo que me lleva a ser autodidacta y estar siempre en constante aprendizaje. Actualmente me encuentro estudiando Programación en la Universidad Tecnologica Nacional. </p>
-    <button class="button">Leer más</button>
+  <div class="sobreMi" id="Sobre_mi">
+    <img src="./img/About_me.png" alt="Matias Suarez retrato">
+    <div class="sobreMi__info">
+      <h2> Sobre mi</h2>
+      <div class="sobreMi--divisor"></div>
+      <p>Me dedico al desarrollo de software, actualmente me encuentro en Argentina, mas precisamente en la ciudad de Tierra del Fuego, trabajando como back-end developer para una empresa crediticia
+        local.</p>
+      <p>Me considero una persona persistente y proactiva lo que me lleva a ser autodidacta y estar siempre en constante aprendizaje. Actualmente me encuentro estudiando Programación en la Universidad Tecnologica Nacional. </p>
+      <button class="button">Leer más</button>
+    </div>
   </div>
-</div>
+  <!--FIN SOBRE MI-->
+
+  <!-- INICIO PORTFOLIO -->
+  <div class="portafolio" id="Portafolio">
+    <div class="portafolio__encabezados">
+      <h2>Mi Portafolio</h2>
+      <div class="encabezados--divisor"></div>
+    </div>
+
+    <div class="portafolio__container">
+      <div class="tarjeta">
+      <div class="tarjeta__img">
+      </div> 
+      <div class="tarjeta__titulo"> 
+        <h2>Descripción del Proyecto</h2>
+        <p>Me contactaron de esta ONG para reformar su web al 100% y darle un toque mas moderno y funcional al sitio.</p>
+      </div>
+      <div class="tarjeta__linkProyecto">
+        <a href="https://github.com/msuarezdev/ConscienteColectivo-Master" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="http://conscientecolectivo.com.ar/"target="_blank">
+          <i class="fa-solid fa-earth-americas"></i>
+        </a>
+      </div>
+      <div class="detallesProyecto__container">
+        <button class="detallesProyecto">
+          <a href="">
+            Más detalles
+          </a>
+        </button>
+      </div>
+      
+      </div>
+      <div class="tarjeta">
+      <div class="tarjeta__img">
+      </div> 
+      <div class="tarjeta__titulo"> 
+        <h2>Descripción del Proyecto</h2>
+        <p>Me contactaron de esta ONG para reformar su web al 100% y darle un toque mas moderno y funcional al sitio.</p>
+      </div>
+      <div class="tarjeta__linkProyecto">
+        <a href="https://github.com/msuarezdev/ConscienteColectivo-Master" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="http://conscientecolectivo.com.ar/"target="_blank">
+          <i class="fa-solid fa-earth-americas"></i>
+        </a>
+      </div>
+      <div class="detallesProyecto__container">
+        <button class="detallesProyecto">
+          <a href="">
+            Más detalles
+          </a>
+        </button>
+      </div>
+      
+      </div>
+      <div class="tarjeta">
+      <div class="tarjeta__img">
+      </div> 
+      <div class="tarjeta__titulo"> 
+        <h2>Descripción del Proyecto</h2>
+        <p>Me contactaron de esta ONG para reformar su web al 100% y darle un toque mas moderno y funcional al sitio.</p>
+      </div>
+      <div class="tarjeta__linkProyecto">
+        <a href="https://github.com/msuarezdev/ConscienteColectivo-Master" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="http://conscientecolectivo.com.ar/"target="_blank">
+          <i class="fa-solid fa-earth-americas"></i>
+        </a>
+      </div>
+      <div class="detallesProyecto__container">
+        <button class="detallesProyecto">
+          <a href="">
+            Más detalles
+          </a>
+        </button>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+  <!-- FIN PORTAFOLIO -->
+
+  <!--INICIO CONTACTO-->
+  <div class="contacto" id="Contacto">
+    <div class="contacto__titulo">
+      <h2>Contacta Conmigo</h2>
+      <div class="contacto--divisor"></div>
+    </div>
+  
+
+    <div class="contacto__container">
+      <img src="./img/Me_opacity80.png" alt="Matias Suarez imagen">
+      <div class="contacto__formulario">
+        <h4>Enviame un Mensaje...</h4>
+        <form class="formulario" action="">
+          <input type="text" placeholder="Nombre">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Escribir mensaje..."></textarea>
+          <button type="submit" class="btn__enviar">
+            Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- FIN CONTACTO-->
+
+  <!--INICIA FOOTER-->
+  <footer class="footer">
+    <div class="footer__container">
+      <h2>Matías Suárez</h2>
+      <h5>Desarrolador de Software</h5>
+    </div>
+    <div class="redesSociales">
+      <a href="https://www.linkedin.com/in/mati-suarez/"target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/msuarezdev" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      
+      <a href="https://www.instagram.com/matisuarez_/"target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      
+      <a href="https://www.facebook.com/MatiiuSuarez" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      
+      
+    </div>
+    
+  </footer>
+
+  <!--FINALIZA FOOTER-->
 
 </body>
 </html>
