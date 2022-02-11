@@ -79,6 +79,7 @@ button{
   margin-top: 10px;
   cursor: pointer;
   box-shadow: 1px 3px 11px -5px rgba(235, 110, 56, .69);
+  text-transform: uppercase;
 }
 button:hover{
   background-color: #f2f2f2;
@@ -119,14 +120,194 @@ button:hover{
   color: #02061c;
 }
 
-.sobreMi--divisor{
+.sobreMi__info button{
+  text-transform: uppercase;
+}
+
+.sobreMi__info button:hover{
+  background-color: #02061c;
+  color: #EB6E38;
+  transition: ease 0.4s;
+}
+.sobreMi--divisor, .encabezados--divisor, .contacto--divisor{
   height: 4px;
   width: 60px;
   background-color: #EB6E38;
   margin-top: 5px;
   margin-bottom: 2em;
 }
+/*FIN SOBRE MI*/
 
+/*INICIO PORTFOLIO*/
+.portafolio{
+  width: 100vw;
+  background-color: #02061c;
+  color: #f2f2f2;
+}
+
+.portafolio__encabezados{
+  width: 100vw;
+  padding: 5em;
+}
+.portafolio__encabezados h2{
+  font-size: 2.5em;
+}
+
+.portafolio .portafolio__container{
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta{
+  width: 300px;
+  height: 450px;
+  color: #f2f2f2;
+  background-color: #030c3a;
+  margin: 1em;
+}
+.tarjeta__img{
+  width: 100%;
+  height: 150px;
+  background-image: url(../img/coco_logo.png);
+  background-size: cover;
+}
+.tarjeta__titulo{
+  padding: 20px;
+}
+
+.tarjeta__linkProyecto{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tarjeta__linkProyecto a{
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.tarjeta__linkProyecto i{
+  font-size: 1.5em;
+}
+
+.tarjeta__linkProyecto i:hover{
+  color: #EB6E38;
+  transition: ease 0.4s;
+}
+
+.tarjeta .detallesProyecto{
+  margin: 0 auto;
+  margin: 1em;
+  width: 70%;
+  
+}
+
+.tarjeta .detallesProyecto a{
+  text-decoration: none;
+  color: #02061c;
+  text-transform: uppercase;
+}
+
+.detallesProyecto__container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1em;
+}
+/* FIN PORFOLIO*/
+
+/*INICIO CONTACTO*/
+.contacto{
+  background-color: #02061c;
+  padding: 3em;
+  margin: 0 auto;
+}
+
+.contacto__container{
+  padding: 3em;
+  margin: 0 auto;
+  display: flex;
+}
+
+.contacto__container img{
+  width: 750px;
+  height: 700px;
+  bottom: 0px;
+}
+
+.contacto__titulo h2{
+  font-size: 2.5em;
+  color: #f2f2f2;
+}
+
+
+
+.contacto__formulario h4{
+  color: #f2f2f2;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+
+.formulario input{
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #f2f2f2;
+  color: #f2f2f2;
+}
+
+.formulario textarea{
+  height: 150px;
+  background: none;
+  color: #f2f2f2;
+  padding: 1.5em;
+  border: 1px solid #f2f2f2;
+}
+/*FIN CONTACTO*/
+
+/*INICIA FOOTER*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  background-color: #EB6E38;
+}
+
+.footer__container h2{
+  font-size: 3em;
+}
+
+.footer__container h5{
+  font-size: 1.5em;
+}
+.redesSociales{
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.redesSociales i{
+  font-size: 2.5em;
+  color: #02061c;
+}
+
+.redesSociales i:hover{
+  color: #f2f2f2;
+  transition: ease 0.4s;
+}
+/*FINALIZA FOOTER*/
 
 /* AZULES
 #02061c*
