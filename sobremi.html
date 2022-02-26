@@ -7,42 +7,109 @@
     <title>Matías Suarez | Sobre Mi</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <!--INICIO HEADER-->
-    <div class="container" alt="wrapper">
-        <header>
-            <nav class="navbar">
-                <div class="navbar__logo" alt="brand">
-                    <h2>
-                        <a href="index.html">
-                        M<span>S</span>
-                        </a>  
-                    </h2>
-                </div>
-                <ul class="navbar__menu">
-                    <li><a class="" href="index.html">Inicio</a></li>
-                    <li><a class="menu--activo" href="sobremi.html">Sobre mi</a></li>
-                    <li><a class="" href="portafolio.html">Portafolio</a></li>
-                    <li><a class="" href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div> <!--FIN HEADER-->  
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">M<span>S</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="menu--activo nav-link" href="sobremi.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="portafolio.html">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
 
     <!--INICIA SOBRE MI-->
     <div class="sobreMi" id="Sobre_mi">
-        <img src="./img/About_me.png" alt="Matias Suarez retrato">
+        <img src="./img/Sobre_mi.png" alt="Matias Suarez retrato">
         <div class="sobreMi__info">
-            <h2> Sobre mi</h2>
+            <h2> ¡Hola! soy Matías 👋</h2>
             <div class="sobreMi--divisor"></div>
-            <p>Me dedico al desarrollo de software, actualmente me encuentro en Argentina, mas precisamente en la ciudad de Tierra del Fuego, trabajando como back-end developer para una empresa crediticia
+            <p>Me dedico al desarrollo de software, actualmente me encuentro en Argentina, mas precisamente en la Provincia
+            de Tierra del Fuego, trabajando como back-end developer para una empresa crediticia
             local.</p>
-            <p>Me considero una persona persistente y proactiva lo que me lleva a ser autodidacta y estar siempre en constante aprendizaje. Actualmente me encuentro estudiando Programación en la Universidad Tecnologica Nacional. </p>
-            <button class="button">Leer más</button>
+            <p>Me considero una persona persistente y proactiva lo que me lleva a ser autodidacta y estar siempre en 
+            constante aprendizaje. Actualmente me encuentro estudiando Desarrollo front-end en la academia Coderhouse y 
+            Tecnicatura en Programación en la Universidad Tecnológica Nacional. </p>
+            <p>Mis inicios en el desarrollo fueron de manera autodidacta a través de videos en YouTube, luego de darme
+            cuenta que me apasionaba empezó mi carrera para convertirme en profesional. Seguí con cursos on demand, esta 
+            vez en Udemy, donde aprendí sobre maquetacion web (html, css). </p>
+            <p>Tiempo después curse en la misma plataforma un master en PHP y sus frameworks mas populares (Laravel y Symfony), 
+                MySQL y Wordpress como CMS, asi como tambien una diplomatura en Fundamentos de la Programación en la UTN.</p>
+            <p>Mi objetivo para este año es poder nutrirme de las mayores experiencias posibles, ampliar mi circulo en el 
+                ambito IT y seguir capacitandome para poder culminar como Full Stack Developer y dar el paso hacia el siguiente nivel🚀
+            </p>
+            <p>A continuación podes ver las tecnologias que domino actualmente👇</p>
         </div>
     </div>
     <!--FIN SOBRE MI-->
+
+    <div class="habilidades">
+        <div class="habilidades__encabezados">
+            <h1>HABILIDADES</h1>
+            <div class="encabezados--divisor"></div>
+        </div>
+        <div class="habilidades__icon">
+            <i class="fa-brands fa-html5">
+                <p>HTML 5</p>
+            </i>
+            <i class="fa-brands fa-css3-alt">
+                <p>CSS 3</p>
+            </i>
+            
+            <i class="fa-brands fa-bootstrap">
+                <p>Bootstrap</p>
+            </i>
+            <i class="fa-brands fa-sass">
+                <p>Sass</p>
+            </i>
+            <i class="fa-brands fa-js">
+                <p>JavaScript</p>
+            </i>
+            <i class="fa-brands fa-php">
+                <p>PHP</p>
+            </i>
+            <i class="fa-solid fa-database">
+                <p>BD SQL</p>
+            </i>
+            <i class="fa-brands fa-symfony">
+                <p>Symfony</p>
+            </i>
+            <i class="fa-brands fa-laravel">
+                <p>Laravel</p>
+            </i>
+            <i class="fa-brands fa-wordpress">
+                <p>Wordpress</p>
+            </i>
+            <i class="fa-brands fa-github-square">
+                <p>Github</p>
+            </i>
+            <i class="fa-brands fa-gitlab">
+                <p>Gitlab</p>
+            </i>
+        </div>
+    </div>
+
+    <!--Experiencia-->
+    
 
     <!--INICIA FOOTER-->
     <footer class="footer">
@@ -65,6 +132,6 @@
             </a>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

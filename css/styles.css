@@ -11,64 +11,67 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.container {
-  width: 100vw;
-  background-color:#02061c;
-  color: #f2f2f2;
-}
+
 /*INICIO HEADER*/
 .navbar{
   display: flex;
   justify-content: space-between;
   padding: 2em;
+  background-color:#02061c;
+  color: #f2f2f2;
 }
-.navbar__logo{
-  margin-top: -7px;
-}
-.navbar__logo a{
+
+.navbar-brand {
   color: #f2f2f2;
   text-decoration: none;
 }
-.navbar__logo span{
-color:#EB6E38;
+.navbar-brand span{
+  color:#EB6E38;
 }
-.navbar__menu{
-  display: flex;
-  width: 50%;
+.navbar-collapse{
   justify-content: space-around;
 }
-.navbar__menu li{
-  list-style: none;
-}
-.navbar__menu a{
+.navbar-collapse a{
   color: #f2f2f2;
   text-decoration: none;
   padding: 10px 20px;
+  margin-right: 5rem;
 }
-.navbar .menu--activo{
-  color:#EB6E38;
-}
-.navbar__menu a:hover{
+.navbar-collapse a:hover{
   background-color: #EB6E38;
   color: #02061c;
   transition: ease 0.4s;
 }
-/*FIN HEADER*/
+.navbar .menu--activo{
+  color:#EB6E38;
+}
+
+.navbar-toggler-icon i{
+  color:#EB6E38;
+  padding-top: 0.2em;
+  font-size: 1em;
+}
 
 /*INICIA MAIN*/
 .main__inicio{
   margin: 0 auto;
-  width: 80vw;
+  width: auto;
   height: 80vh;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   align-items: center;
+  background-color: #02061c;
+  color: #f2f2f2;
+
 }
 .main__inicio h1 {
   font-size:3em;
 }
 .main__inicio span{
   color: #EB6E38;
+}
+.main__info{
+  padding-left: 5em;
 }
 button{
   padding: 10px 20px;
@@ -90,14 +93,19 @@ button:hover{
   border: 7px solid #EB6E38;
   height: 520px;
 }
+.main__img{
+padding-left: 8em;
+}
 /*FINALIZA MAIN*/
 
 /*INICIA SOBRE MI*/
 .sobreMi{
+  
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  width: 100vw;
+  width: auto;
   align-items: center;
+  
 }
 
 .sobreMi img{
@@ -135,17 +143,52 @@ button:hover{
   margin-top: 5px;
   margin-bottom: 2em;
 }
+
+.habilidades{
+  width: 100vw;
+  background-color: #02061c;
+  color: #f2f2f2;
+}
+.habilidades__encabezados{
+  width: 100vw;
+  padding: 5em;
+}
+.habilidades__icon{
+  padding: 2em;
+  display: grid; 
+  grid-template-columns: repeat(3,1fr);
+  justify-content: space-evenly;
+  padding-left: 15em;
+  margin: 0 auto;
+}
+
+.habilidades__icon p{
+  font-size: 30px;
+  padding: auto;
+}
+
+.habilidades__icon i{
+    font-size: 12em;
+    color: #f2f2f2;
+    padding-bottom: 0.5em;
+  }
+  
+  .habilidades__icon i:hover{
+    color: #EB6E38;
+    transition: ease 0.4s;
+  }
+
 /*FIN SOBRE MI*/
 
 /*INICIO PORTFOLIO*/
 .portafolio{
-  width: 100vw;
+  width: auto;
   background-color: #02061c;
   color: #f2f2f2;
 }
 
 .portafolio__encabezados{
-  width: 100vw;
+  width: 100%;
   padding: 5em;
 }
 .portafolio__encabezados h2{
@@ -154,27 +197,58 @@ button:hover{
 
 .portafolio .portafolio__container{
   width: 80vw;
-  height: 80vh;
+  height: auto;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-
-.tarjeta{
-  width: 300px;
-  height: 450px;
+.card-body{
   color: #f2f2f2;
   background-color: #030c3a;
   margin: 1em;
 }
-.tarjeta__img{
-  width: 100%;
+.tarjeta{
+  width: 300px;
+  height: 35em;
+  color: #f2f2f2;
+  background-color: #030c3a;
+  margin: 1em;
+}
+.tarjeta__img1{
+  width: 60%;
   height: 150px;
   background-image: url(../img/coco_logo.png);
   background-size: cover;
+  margin:auto;
 }
-.tarjeta__titulo{
+.tarjeta__img2{
+  width: 50%;
+  height: 150px;
+  background-image: url(../img/iconApp.webp);
+  background-size: cover;
+  margin:auto;
+  padding-top: 1em;
+}
+.tarjeta__img3{
+  
+  height: 150px;
+  background-image: url(../img/20220222142031.png);
+  background-size: cover;
+  margin:auto;
+  padding-top: 1em;
+  }
+.card-img-top-finanzas{
+width: 100%;
+height: 18em;
+
+}  
+.card--title{ 
   padding: 20px;
+}
+.tarjeta__titulo p {
+  padding-top: 1em;
 }
 
 .tarjeta__linkProyecto{
@@ -197,23 +271,96 @@ button:hover{
 }
 
 .tarjeta .detallesProyecto{
-  margin: 0 auto;
+  margin: auto;
   margin: 1em;
-  width: 70%;
+  width: 100%;
   
 }
 
 .tarjeta .detallesProyecto a{
   text-decoration: none;
-  color: #02061c;
-  text-transform: uppercase;
+  color: #02061c;width:430px ;
+  height: 380px;
 }
 
-.detallesProyecto__container{
-  display: flex;
-  width: 100%;
+.portafolio__contenedor{
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
   justify-content: center;
-  margin-top: 1em;
+}
+
+.portafolio__tarjeta{
+    width: 80vw;
+    height: auto;
+    color: #f2f2f2;
+    background-color: #030c3a;
+    margin: 1em;
+  
+}
+
+.portafolio__img--1{
+  width: 25%;
+  height: 300px;
+  background-image: url(../img/coco_logo_ccexpress.png);
+  background-size: cover;
+  margin: auto;
+  
+}
+
+.portafolio__img--2{
+  width: 20%;
+  height: 300px;
+  background-image: url(../img/iconApp.webp);
+  background-size: cover;
+  margin: auto;
+  
+}
+.portafolio__img--3{
+  
+  height: 300px;
+  background-image: url(../img/20220222142031.png);
+  background-size: cover;
+  margin: auto;
+  
+}
+
+.portafolio__tarjeta--titulo{
+  padding: 20px;
+}
+
+.portafolio__tarjeta--titulo h2{
+  padding-bottom: 1em;
+  padding-left: 1em;
+  color: #EB6E38;
+}
+
+.portafolio__tarjeta p{
+  margin-bottom: 1em;
+  text-align: justify;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.portafolio__linkProyecto{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.portafolio__linkProyecto a{
+  color: #f2f2f2;
+  text-decoration: none;
+
+}
+
+.portafolio__linkProyecto i{
+  font-size: 3em;
+}
+
+.portafolio__linkProyecto i:hover{
+  color: #EB6E38;
+  transition: ease 0.4s;
 }
 /* FIN PORFOLIO*/
 
@@ -270,6 +417,34 @@ button:hover{
   padding: 1.5em;
   border: 1px solid #f2f2f2;
 }
+.main__contacto{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+.main__contacto--info{
+  grid-column: 1/5;
+  padding: 3em;
+}
+.main__contacto img{
+  width: 100%;
+  grid-column:7/11;
+}
+.main__contacto p{
+  padding-bottom: 1em;
+}
+.main__contacto h2{
+  font-size: 2em;
+  color: #02061c;
+}
+.main__contacto button:hover{
+  background-color: #02061c;
+  color: #EB6E38;
+  transition: ease 0.4s;
+}
+
+
 /*FIN CONTACTO*/
 
 /*INICIA FOOTER*/
@@ -278,16 +453,18 @@ button:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 200px;
   background-color: #EB6E38;
 }
 
 .footer__container h2{
+  color: #02061c;
   font-size: 3em;
 }
 
 .footer__container h5{
+  color: #02061c;
   font-size: 1.5em;
   padding: 0.5em;
 }
@@ -309,13 +486,77 @@ button:hover{
 }
 /*FINALIZA FOOTER*/
 
-/* AZULES
-#02061c*
-#191C32
 
-NARANJA 
-#EB6E38
+/* -.-.-.-.-.-   Media Qwerys   -.-.-.-.-.-*/
 
-Dorado
-#D4B128
-/ 
+@media(max-width: 992px) {
+/*Index__Portafolio*/
+.card-img-top-finanzas{
+  
+  height: 11em;
+  
+  }  
+
+/*Index__Contacto*/  
+.contacto__container img{
+  width:430px ;
+  height: 380px;
+}
+
+
+
+@media(max-width: 576px){
+/*INDEX__MAIN*/
+.main__inicio{
+  display: flex;
+  height: 90vh;
+  padding-left: 2em;
+}
+.main__inicio h1 {
+  font-size:2em;
+  
+}
+.main__inicio p {
+  text-align:left;
+}
+.main__info{
+  font-size: large;
+}
+.main--img{
+display: none;
+} 
+/*INDEX__SOBRE MI*/
+.sobreMi{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+}
+/*  INDEX__PORTAFOLIO*/
+.card-img-top-finanzas{
+  height: 18em;
+  }  
+/*INDEX__CONTACTO*/
+.contacto__container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  align-items: center;
+}
+.contacto__titulo h2{
+  font-size: 2em;
+  
+}
+
+.contacto__container img{
+  width: 20em;
+}
+.contacto__formulario h4{
+  margin-top: 5em;
+}
+.formulario{
+  width: 75vw;
+  margin-top: 2em;
+}
+}

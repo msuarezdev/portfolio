@@ -7,28 +7,123 @@
     <title>Matías Suarez | Portafolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
 <body>
-    <!--INICIO HEADER-->
-    <div class="container" alt="wrapper">
-        <header>
-            <nav class="navbar">
-                <div class="navbar__logo" alt="brand">
-                    <h2>
-                        <a href="index.html">
-                        M<span>S</span>
-                        </a>  
-                    </h2>
-                </div>
-                <ul class="navbar__menu">
-                    <li><a class="" href="index.html">Inicio</a></li>
-                    <li><a class="" href="sobremi.html">Sobre mi</a></li>
-                    <li><a class="menu--activo" href="portafolio.html">Portafolio</a></li>
-                    <li><a class="" href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div> <!--FIN HEADER-->  
+  <!--INICIO NAVBAR-->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">M<span>S</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobremi.html">Sobre mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="menu--activo nav-link" href="portafolio.html">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!--FIN NAVBAR-->  
+    
+  <!-- INICIO PORTFOLIO -->
+  <div class="portafolio__seccion">
+    <div class="portafolio__encabezados">
+      <h2>Mi Portafolio</h2>
+      <div class="encabezados--divisor"></div>
+    </div>
+
+    <div class="portafolio__contenedor">
+      <div class="portafolio__tarjeta">
+      <div class="portafolio__img--1">
+      </div> 
+      <div class="portafolio__tarjeta--titulo"> 
+        <h2>Conscinete Colectivo</h2>
+        <p>Consciente colectivo es un espacio de jovenes de activismo y militancia socio-ambiental con el obketivo de incidir
+          en las decisiones politicas. Su objetivo es que la crisis cocial, climatica y ambiental, sea considerada como prioridad.
+        </p>
+        <p>Me contactaron desde esta ONG para re-diseñar y desarrollar un sitio web que se adaptara a sus necesidades.
+          Despues de algunas reuniones accedí al codigo del proyecto y empece a modificarlo, hasta el dia de la fecha
+          me encuentro trabajando en el mismo en mi tiempo libre. 
+        </p>
+        <p>En el mismo se estan utilizando para el maquetado HTML5 y CSS3 con algunas tecnologias como Bootstrap y preprocesador SASS, y tambien JavaScript para darle algunas funcionalidades. </p>
+      </div>
+      <div class="portafolio__linkProyecto">
+        <a href="https://github.com/msuarezdev/ConscienteColectivo-Master" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="http://conscientecolectivo.com.ar/"target="_blank">
+          <i class="fa-solid fa-earth-americas"></i>
+        </a>
+      </div>
+      <div class="detallesProyecto__container">
+        
+      </div>
+      
+      </div>
+      <div class="portafolio__tarjeta">
+      <div class="portafolio__img--2">
+      </div> 
+      <div class="portafolio__tarjeta--titulo"> 
+        <h2>Tarjeta La Red</h2>
+        <p>Este es mi primer proyecto en esta empresa, la idea es ir transformando todo el codigo PHP de la web a JS.
+          actualmente llevamos un 63%.
+        </p>
+        <p>Ademas de las tecnologias anterior mencionadas se utiliza HTML para el marcado y CSS para los estilos.</p>
+      </div>
+      <div class="portafolio__linkProyecto">
+        <a href="https://gitlab.com/tarjetalared/lared-web" target="_blank">
+          <i class="fa-brands fa-gitlab"></i>
+        </a>
+        <a href="https://www.tarjetalared.com/"target="_blank">
+          <i class="fa-solid fa-earth-americas"></i>
+        </a>
+      </div>
+      <div class="detallesProyecto__container">
+        
+      </div>
+      
+      </div>
+      <div class="portafolio__tarjeta">
+      <div class="portafolio__img--3">
+      </div> 
+      <div class="portafolio__tarjeta--titulo"> 
+        <h2>Aplicación Finanzas Personales</h2>
+        <p>Actualmente me encuentro desarrollando esta aplicación en JavaScript que ayuda a llevar los ingresos y egresos, la cual
+          nos va a ayudar a administrar nuestras finanzas lo mas cómodo posible.</p>
+        <p>Cuenta con un formulario para ir agregando un nuevo ingreso y/o egreso, su descripcion y el valor del mismo, como tambien podemos observar dos cuadros con todos los ingresos detallos, lo mismo para los egresos.</p>
+        <p>Esta pensado para el uso cotidiano y personal, aunque se podria aplicar sin ningun tipo de problema a alguna organizacion que lo requiera.</p>
+      </div>
+      <div class="portafolio__linkProyecto">
+        <a href="#" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#"target="_blank">
+          <i class="fa-solid fa-earth-americas"></i>
+        </a>
+      </div>
+      <div class="detallesProyecto__container">
+        
+      </div>
+      
+      </div>
+    </div>
+  </div>
+  <!-- FIN PORTAFOLIO -->
+
     <!--INICIA FOOTER-->
     <footer class="footer">
         <div class="footer__container">
@@ -52,5 +147,6 @@
     </footer>
 
     <!--FINALIZA FOOTER-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
