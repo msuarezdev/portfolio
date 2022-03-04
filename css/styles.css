@@ -19,14 +19,17 @@ body {
   padding: 2em;
   background-color:#02061c;
   color: #f2f2f2;
+  font-family: 'Montserrat';
 }
 
 .navbar-brand {
   color: #f2f2f2;
   text-decoration: none;
+  font-weight: bold;
 }
 .navbar-brand span{
   color:#EB6E38;
+  text-decoration: none;
 }
 .navbar-collapse{
   justify-content: space-around;
@@ -56,7 +59,7 @@ body {
 .main__inicio{
   margin: 0 auto;
   width: auto;
-  height: 80vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   align-items: center;
@@ -66,11 +69,13 @@ body {
 }
 .main__inicio h1 {
   font-size:3em;
+  
 }
 .main__inicio span{
   color: #EB6E38;
 }
 .main__info{
+  font-family: 'Montserrat';
   padding-left: 5em;
 }
 button{
@@ -118,6 +123,7 @@ padding-left: 8em;
 }
 
 .sobreMi__info {
+  font-family: 'Montserrat';
   grid-column: 5/10;
   padding: 3em;
 }
@@ -145,12 +151,13 @@ padding-left: 8em;
 }
 
 .habilidades{
-  width: 100vw;
+  width: 100%;
   background-color: #02061c;
   color: #f2f2f2;
+  font-family: 'Montserrat';
 }
 .habilidades__encabezados{
-  width: 100vw;
+  width: 100%;
   padding: 5em;
 }
 .habilidades__icon{
@@ -158,13 +165,8 @@ padding-left: 8em;
   display: grid; 
   grid-template-columns: repeat(3,1fr);
   justify-content: space-evenly;
-  padding-left: 15em;
+  padding-left: 12em;
   margin: 0 auto;
-}
-
-.habilidades__icon p{
-  font-size: 30px;
-  padding: auto;
 }
 
 .habilidades__icon i{
@@ -177,6 +179,16 @@ padding-left: 8em;
     color: #EB6E38;
     transition: ease 0.4s;
   }
+  .icon{  
+    width: 15em;
+    height: 15em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .icon p{
+    text-align: center;
+    font-size: 30px;
+  }
 
 /*FIN SOBRE MI*/
 
@@ -188,8 +200,10 @@ padding-left: 8em;
 }
 
 .portafolio__encabezados{
+  font-family: 'Montserrat';
   width: 100%;
   padding: 5em;
+  
 }
 .portafolio__encabezados h2{
   font-size: 2.5em;
@@ -208,6 +222,7 @@ padding-left: 8em;
   color: #f2f2f2;
   background-color: #030c3a;
   margin: 1em;
+
 }
 .tarjeta{
   width: 300px;
@@ -219,7 +234,7 @@ padding-left: 8em;
 .tarjeta__img1{
   width: 60%;
   height: 150px;
-  background-image: url(../img/coco_logo.png);
+  background-image: url(../img/iconApp.webp);
   background-size: cover;
   margin:auto;
 }
@@ -301,8 +316,8 @@ height: 18em;
 }
 
 .portafolio__img--1{
-  width: 25%;
-  height: 300px;
+  width: 15em;
+  height: 15em;
   background-image: url(../img/coco_logo_ccexpress.png);
   background-size: cover;
   margin: auto;
@@ -310,33 +325,34 @@ height: 18em;
 }
 
 .portafolio__img--2{
-  width: 20%;
-  height: 300px;
+  width: 15em;
+  height: 15em;
   background-image: url(../img/iconApp.webp);
   background-size: cover;
   margin: auto;
   
 }
 .portafolio__img--3{
-  
-  height: 300px;
+  height: 30em;
+  width: auto;
   background-image: url(../img/20220222142031.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: auto;
   
 }
 
-.portafolio__tarjeta--titulo{
+.portafolio__tarjeta--contenido{
   padding: 20px;
 }
 
-.portafolio__tarjeta--titulo h2{
+.portafolio__tarjeta--contenido h2{
   padding-bottom: 1em;
   padding-left: 1em;
   color: #EB6E38;
 }
 
-.portafolio__tarjeta p{
+.portafolio__tarjeta--contenido p{
   margin-bottom: 1em;
   text-align: justify;
   padding-left: 1em;
@@ -346,6 +362,7 @@ height: 18em;
 .portafolio__linkProyecto{
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 2em;
 }
 
 .portafolio__linkProyecto a{
@@ -362,13 +379,55 @@ height: 18em;
   color: #EB6E38;
   transition: ease 0.4s;
 }
+.portafolio__seccion{
+  background-color: #02061c;
+}
+.portafolio__encabezados h1{
+  color: #f2f2f2;
+}
+
 /* FIN PORFOLIO*/
+
+/*INICIO SERVICIO*/
+.servicios{
+  text-align: center;
+  padding-top: 10em;
+  padding-bottom: 10em;
+  background-color: #02061c;
+}
+.servicios i{
+  font-size: 20em;
+  color: #f2f2f2;
+}
+.servicios h1{
+  margin-top: 1.5em;
+    font-family: 'Montserrat';
+    color: #EB6E38;
+    font-size: px;
+    font-weight: bolder;
+}
+.servicios h2{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+.servicios a {
+  margin-top: 7rem;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+.servicios a:hover {
+  color: #EB6E38;
+  transition: ease 0.4s;
+}
+/*FIN SERVICIO*/
 
 /*INICIO CONTACTO*/
 .contacto{
   background-color: #02061c;
   padding: 3em;
   margin: 0 auto;
+  font-family: 'Montserrat';
 }
 
 .contacto__container{
@@ -378,7 +437,7 @@ height: 18em;
 }
 
 .contacto__container img{
-  width: 750px;
+  width: 620px;
   height: 700px;
   bottom: 0px;
 }
@@ -420,12 +479,13 @@ height: 18em;
 .main__contacto{
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  width: 100vw;
+  width: 100%;
   align-items: center;
 }
 .main__contacto--info{
   grid-column: 1/5;
   padding: 3em;
+  font-family: 'Montserrat';
 }
 .main__contacto img{
   width: 100%;
@@ -456,17 +516,21 @@ height: 18em;
   width: 100%;
   height: 200px;
   background-color: #EB6E38;
+  font-family: 'Montserrat';
 }
 
 .footer__container h2{
   color: #02061c;
   font-size: 3em;
+  font-weight: 600;
+  
 }
 
 .footer__container h5{
   color: #02061c;
   font-size: 1.5em;
   padding: 0.5em;
+  font-weight: 600;
 }
 .redesSociales{
   display: flex;
@@ -490,53 +554,154 @@ height: 18em;
 /* -.-.-.-.-.-   Media Qwerys   -.-.-.-.-.-*/
 
 @media(max-width: 992px) {
-/*Index__Portafolio*/
+/*Sobre mi*/
+.sobreMi img{
+  width: 100%;
+  height: 50%;
+  
+}
+.sobreMi__info {
+  grid-column: 5/10;
+  padding: 2em;
+}
+.habilidades__encabezados{
+  padding-bottom: 2em;
+}
+.habilidades__icon{
+  padding-left: 6em;
+}
+.habilidades__icon i{
+  font-size: 10em;
+}
+.icon{  
+  width: 12em;
+  height: 12em;
+}
+.icon p{
+  font-size: 25px;
+  }
+/*Portafolio*/
 .card-img-top-finanzas{
   
   height: 11em;
   
   }  
-
-/*Index__Contacto*/  
+  .portafolio__tarjeta--contenido p{
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }  
+  .portafolio__img--3{
+    width: auto;
+    height: 20em;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+/*SERVICIOS*/
+.servicios i{
+  font-size: 15em;
+}  
+/*Contacto*/  
 .contacto__container img{
   width:430px ;
   height: 380px;
 }
-
+.main__contacto{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100%;
+  align-items: center;
+}
+.main__contacto--info{
+  grid-column: 1/6;
+  
+}
+.main__contacto img{
+  grid-column:6/11;
+}
+}
 
 
 @media(max-width: 576px){
-/*INDEX__MAIN*/
+/*INDEX MAIN*/
 .main__inicio{
+
   display: flex;
-  height: 90vh;
+  height: 90%;
+  width: 100%;
   padding-left: 2em;
+  padding-bottom: 2em;
 }
 .main__inicio h1 {
-  font-size:2em;
+  font-size:1.5em;
   
 }
 .main__inicio p {
   text-align:left;
 }
 .main__info{
+  padding-left: 3em;
   font-size: large;
 }
 .main--img{
 display: none;
 } 
-/*INDEX__SOBRE MI*/
+/*SOBRE MI*/
 .sobreMi{
   display: flex;
   flex-direction: column;
   width: auto;
   align-items: center;
 }
-/*  INDEX__PORTAFOLIO*/
+.habilidades__encabezados{
+  padding-bottom: 1em;
+}
+.habilidades__icon{
+  padding: 2em;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: space-evenly;
+  padding-left: 5em;
+  margin: 0 auto;
+}
+.habilidades__icon i{
+  font-size: 7em;
+}
+.icon{  
+  width: 10em;
+  height: 10em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.icon p{
+  font-size: 18px;
+}
+/*  PORTAFOLIO*/
 .card-img-top-finanzas{
   height: 18em;
+  }
+  .portafolio__tarjeta--contenido{
+    text-align: center;
+  }
+  .portafolio__tarjeta--contenido p{
+    margin-bottom: 1em;
+    font-size: 1em;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
   }  
-/*INDEX__CONTACTO*/
+  .portafolio__img--3{
+    width: auto;
+    height: 10em;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+/*SERVICIOS*/
+.servicios i{
+  font-size: 10em;
+}
+/*CONTACTO*/
 .contacto__container{
   display: flex;
   flex-direction: column;
@@ -559,4 +724,32 @@ display: none;
   width: 75vw;
   margin-top: 2em;
 }
+.main__contacto{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  align-items: center;
 }
+.main__contacto--info button{
+  width: 100%;
+  }
+.footer{
+  height: 150px;
+}
+.footer__container h2{
+  font-size: 2em;
+  
+}
+.footer__container h5{
+  color: #02061c;
+  font-size: 1em;
+  padding: 0.5em;
+}
+.redesSociales i{
+  font-size: 2em;
+  color: #02061c;
+}
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import "variables";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*INICIA MAIN*/
+.main__inicio{
+  margin: 0 auto;
+  width: auto;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  background-color: $color-principal;
+  color: $blanco;
+
+
+  h1 {
+  font-size:3em;
+  }
+  span{
+  color: $color-secundario;
+  }
+}
+.main__info{
+  font-family: $fuente;
+  padding-left: 5em;
+
+  button{
+    padding: 10px 20px;
+    background-color: $color-secundario;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(235, 110, 56, .69);
+    text-transform: uppercase;
+  }
+  &:hover{
+  background-color: $blanco;
+  box-shadow: none;
+  }
+}
+.main--img{
+  width: 380px;
+  border: 7px solid $color-secundario;
+  height: 520px;
+}
+.main__img{
+padding-left: 8em;
+}
+/*FINALIZA MAIN*/
+
+/*SERVICIOS*/
+.servicios{
+  text-align: center;
+  padding-top: 10em;
+  padding-bottom: 10em;
+  background-color: #02061c;
+
+  i{
+  font-size: 20em;
+  color: #f2f2f2;
+  }
+  h1{
+  margin-top: 1.5em;
+  font-family: 'Montserrat';
+  color: #EB6E38;
+  font-size: px;
+  font-weight: bolder;
+  }
+  h2{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 14px;
+  }
+  a {
+  margin-top: 7rem;
+  color: #f2f2f2;
+  text-decoration: none;
+  }
+  &:hover {
+  color: #EB6E38;
+  transition: ease 0.4s;
+  }
+}
+/*FIN SERVICIOS*/
+@import "navbar";
+@import "sobremi";
+@import "portafolio";
+@import "contacto";
+@import "footer";
+@import "responsive";
